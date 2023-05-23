@@ -8,8 +8,10 @@ const myWalletAddress = myKey.getPublic('hex');
 let coin = new Blockchain();
 
 const tx1 = new Transaction(myWalletAddress, 'public key goes here', 10);
+const tx2 = new Transaction(myWalletAddress, 'another key goes here too', 30);
 tx1.signTransation(myKey);
 coin.addTransaction(tx1);
+coin.addTransaction(tx2);
 
 console.log('\n Starting the miner');
 coin.minePendingTransactions(myWalletAddress);
