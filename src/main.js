@@ -21,3 +21,5 @@ console.log('\n Balance is ', coin.getBalanceOfAddress(myWalletAddress));
 console.log('Is chain valid?', coin.isChainValid());
 
 console.log(JSON.stringify(coin, null, 4));
+
+console.log("THis is my test")
