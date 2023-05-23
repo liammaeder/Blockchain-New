@@ -41,7 +41,6 @@ class Transaction{
 
 class Block{
     constructor(timestamp, transactions, previousHash = ''){
-        this.hostAuth = "liamMaeder";
         this.previousHash = previousHash;
         this.timestamp    = timestamp;
         this.transactions = transactions;
